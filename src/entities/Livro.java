@@ -1,51 +1,51 @@
 package entities;
 
 public class Livro {
-	private String titulo;
-	private String autor;
-	private Integer idLivro;
-	private Boolean status;
-	
-	public Livro() {
-	}
+    private String titulo;
+    private String autor;
+    private Integer idLivro;
+    private Boolean status;
 
-	public Livro(String titulo, String autor, Integer idLivro, Boolean status) {
-		super();
-		this.titulo = titulo;
-		this.autor = autor;
-		this.idLivro = idLivro;
-		this.status = status;
-	}
+    public Livro() {
+    }
 
-	public String getTitulo() {
-		return titulo;
-	}
+    public Livro(String titulo, String autor, Integer idLivro, Boolean status) {
+        super();
+        this.titulo = titulo;
+        this.autor = autor;
+        this.idLivro = idLivro;
+        this.status = status;
+    }
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
+    public String getTitulo() {
+        return titulo;
+    }
 
-	public String getAutor() {
-		return autor;
-	}
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
-	public void setAutor(String autor) {
-		this.autor = autor;
-	}
+    public String getAutor() {
+        return autor;
+    }
 
-	public Integer getIdLivro() {
-		return idLivro;
-	}
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
 
-	public void setIdLivro(Integer idLivro) {
-		this.idLivro = idLivro;
-	}
+    public Integer getIdLivro() {
+        return idLivro;
+    }
 
-	public Boolean getStatus() {
-		return status;
-	}
+    public void setIdLivro(Integer idLivro) {
+        this.idLivro = idLivro;
+    }
 
-	public void setStatus(Boolean status) {
-		this.status = status;
-	}
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
 }
