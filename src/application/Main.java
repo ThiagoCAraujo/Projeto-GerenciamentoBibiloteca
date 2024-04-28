@@ -22,7 +22,7 @@ public class Main {
                     encerrarPrograma = true;
                     break;
                 case 1:
-                    //func a adicionar
+                    //referente ao funcionario func a adicionar
                     break;
                 case 2:
                     //adicionei algumas funcionalidades falta a dicionar a parte de menu de opcoes
