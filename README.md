@@ -1,7 +1,7 @@
-# Biblioteca do carangueijo
+# Biblioteca do Carangueijo
 ## Sistema de Biblioteca
 
-Este é um sistema de biblioteca que permite aos usuários realizar diversas operações, como emprestar e devolver livros, adicionar e remover livros e clientes, entre outras funcionalidades.
+Este é um sistema de biblioteca que permite aos clientes e funcionarios realizar diversas operações, como emprestar e devolver livros, adicionar e remover livros e clientes, entre outras funcionalidades.
 
 ## Funcionalidades
 
@@ -14,7 +14,6 @@ No Menu Cliente, os usuários podem realizar as seguintes operações:
 1. **Listar Livros Disponíveis:** Exibe a lista de livros disponíveis para empréstimo.
 2. **Emprestar Livro:** Permite ao cliente emprestar um livro, informando o ID do cliente e o ID do livro desejado.
 3. **Devolver Livro:** Permite ao cliente devolver um livro que estava emprestado, informando o ID do cliente e o ID do livro a ser devolvido.
-0. **Voltar:** Retorna ao menu principal.
 
 ### Menu Funcionário
 
@@ -26,9 +25,8 @@ No Menu Funcionário, os funcionários da biblioteca podem realizar as seguintes
 4. **Remover Cliente:** Permite remover um cliente do sistema, informando o ID do cliente a ser removido.
 5. **Listar Clientes:** Exibe a lista de todos os clientes cadastrados no sistema.
 6. **Listar Livros:** Exibe a lista de todos os livros cadastrados no sistema, juntamente com seu status (disponível ou emprestado).
-0. **Voltar:** Retorna ao menu principal.
 
-## Estrutura do Código
+## Estrutura do Programa
 
 ### Main (Classe Principal):
 O método main é o ponto de entrada do programa. 
@@ -36,8 +34,8 @@ Ele inicializa a biblioteca e exibe os menus para cliente e funcionário.
 A função inicializarBiblioteca é chamada para adicionar alguns livros à biblioteca.
 Os menus são estruturados em um loop do-while que permite ao usuário escolher uma opção até optar por sair (opção 0).
 
-### Biblioteca (Classe que representa a biblioteca):
-Mantém listas de livros e clientes.
+### Classe Biblioteca:
+É a classe com a principal lógica das operações do programa.Mantém listas de livros e clientes.
 #### Métodos principais:
 #### adicionarLivro:
 Adiciona um livro à lista de livros da biblioteca.
@@ -55,8 +53,9 @@ Permite que um cliente devolva um livro, atualizando seu status para "Disponíve
 Localiza um cliente na lista de clientes por meio do ID.
 #### encontrarLivroPorID:
 Localiza um livro na lista de livros por meio do ID.
-### classe Pessoa
-é uma classe genérica que representa uma pessoa. Ela contém os seguintes atributos:
+
+### Classe Pessoa
+é uma classe genérica que representa uma pessoa. Ela serve de superclasse para a Classe Cliente. Essa classe foi criada para caso haja atualizações futuras, o código fique mais legível e a implementação se torne mais simples.
 
 Nome: O nome da pessoa.
 Endereço: O endereço da pessoa.
