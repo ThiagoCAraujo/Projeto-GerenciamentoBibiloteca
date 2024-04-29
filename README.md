@@ -67,7 +67,7 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 
 ## Interface e Utilização
 
-![Menu Inicial](C:\Users\thico\OneDrive\Pictures\Screenshots\Captura de tela 2024-04-29 203122.png)
+![Menu Inicial](Captura de tela 2024-04-29 203122.png)
 
 ![Menu Cliente](C:\Users\thico\OneDrive\Pictures\Screenshots\Captura de tela 2024-04-29 203145.png)
 
