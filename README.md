@@ -69,6 +69,6 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 
 ![Menu Inicial](Imagens/203122.png)
 
-![Menu Cliente](C:\Users\thico\OneDrive\Pictures\Screenshots\Captura de tela 2024-04-29 203145.png)
+![Menu Cliente](Imagens/203145.png)
 
 ![Menu Funcionário](C:\Users\thico\OneDrive\Pictures\Screenshots\Captura de tela 2024-04-29 203209.png)
