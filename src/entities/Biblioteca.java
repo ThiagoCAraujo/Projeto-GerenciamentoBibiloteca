@@ -20,7 +20,7 @@ public class Biblioteca {
     public ArrayList<Cliente> getListaClientes() {
         return listaClientes;
     }
-    
+
     // Métodos da Biblioteca
     public void adicionarLivro(Livro livro) {
         listaLivros.add(livro);
@@ -41,7 +41,7 @@ public class Biblioteca {
     public void emprestarLivro(Cliente cliente, Livro livro) {
         if (livro.getStatus().equals("Disponível")) {
             cliente.emprestarLivro(livro);
-            System.out.println("Livro emprestado com sucesso!");
+            System.out.println("Livro pego emprestado com sucesso!");
         } else {
             System.out.println("O livro não está disponível para empréstimo.");
         }
