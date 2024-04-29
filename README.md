@@ -67,7 +67,7 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 
 ## Interface e Utilização
 
-![Menu Inicial](Imagens/203122.png)
+![Menu Inicial](Imagens/MenuPrincipal.png)
 
 ![Menu Cliente](Imagens/203145.png)
 
