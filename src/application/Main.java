@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("BEM-VINDO(A) A BIBLIOTECA DO CARANGUEIJO!!");
-        
+
         int opcao;
         do {
             System.out.println("\n=== Menu ===");
@@ -54,7 +54,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n=== Menu Cliente ===");
         System.out.println("1. Lista de Livros Disponíveis");
-        System.out.println("2. Emprestar Livro");
+        System.out.println("2. Pegar livro emprestado");
         System.out.println("3. Devolver Livro");
         System.out.println("0. Voltar");
 
@@ -62,22 +62,22 @@ public class Main {
         int opcao = scanner.nextInt();
 
         switch (opcao) {
-        	case 1:
-        		System.out.println("\nLivros Disponíveis:");
+            case 1:
+                System.out.println("\nLivros Disponíveis:");
                 for (Livro livro : biblioteca.getListaLivros()) {
                     if (livro.getStatus().equals("Disponível")) {
                         livro.imprimirDetalhes();
                     }
                 }
                 break;
-             case 2:
-               	System.out.print("Digite o ID do Cliente: ");
-               	int idClienteEmprestimo = scanner.nextInt();
-               	Cliente clienteEmprestimo = biblioteca.encontrarClientePorID(idClienteEmprestimo);
-               	if (clienteEmprestimo != null) {
-               		System.out.print("Digite o ID do Livro que deseja emprestar: ");
-               		int idLivroEmprestimo = scanner.nextInt();
-               		Livro livroEmprestimo = biblioteca.encontrarLivroPorID(idLivroEmprestimo);
+            case 2:
+                System.out.print("Digite o ID do Cliente: ");
+                int idClienteEmprestimo = scanner.nextInt();
+                Cliente clienteEmprestimo = biblioteca.encontrarClientePorID(idClienteEmprestimo);
+                if (clienteEmprestimo != null) {
+                    System.out.print("Digite o ID do Livro que deseja pegar emprestado: ");
+                    int idLivroEmprestimo = scanner.nextInt();
+                    Livro livroEmprestimo = biblioteca.encontrarLivroPorID(idLivroEmprestimo);
                     if (livroEmprestimo != null) {
                         biblioteca.emprestarLivro(clienteEmprestimo, livroEmprestimo);
                     } else {
@@ -131,9 +131,10 @@ public class Main {
             case 1:
                 // Lógica para adicionar livro
                 System.out.print("Digite o título do livro: ");
-                String tituloLivro = scanner.next();
+                String tituloLivro = scanner.nextLine();
                 System.out.print("Digite o autor do livro: ");
-                String autorLivro = scanner.next();
+                scanner.nextLine();
+                String autorLivro = scanner.nextLine();
                 System.out.print("Digite o ID do livro: ");
                 int idLivro = scanner.nextInt();
                 biblioteca.adicionarLivro(new Livro(tituloLivro, autorLivro, idLivro));
@@ -156,7 +157,8 @@ public class Main {
                 System.out.print("Digite o nome do cliente: ");
                 String nomeCliente = scanner.next();
                 System.out.print("Digite o endereço do cliente: ");
-                String enderecoCliente = scanner.next();
+                scanner.nextLine();
+                String enderecoCliente = scanner.nextLine();
                 System.out.print("Digite o telefone do cliente: ");
                 String telefoneCliente = scanner.next();
                 System.out.print("Digite o ID do cliente: ");
