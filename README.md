@@ -1,7 +1,7 @@
 # Biblioteca do Carangueijo
 ## Sistema de Biblioteca
 
-Este é um sistema de biblioteca que permite aos clientes e funcionarios realizar diversas operações, como emprestar e devolver livros, adicionar e remover livros e clientes, entre outras funcionalidades.
+Este é um sistema de biblioteca que permite aos clientes e funcionários realizar diversas operações, como emprestar e devolver livros, adicionar e remover livros e clientes, entre outras funcionalidades.
 
 ## Funcionalidades
 
@@ -31,20 +31,26 @@ No `Menu Funcionário`, os funcionários da biblioteca podem realizar as seguint
 ### Main (Classe Principal):
 O método main é o ponto de entrada do programa. 
 Ele inicializa a biblioteca e exibe os menus para cliente e funcionário.
-A função `inicializarBiblioteca` é chamada para adicionar alguns livros à biblioteca.
+A função `inicializarBiblioteca()` é chamada para adicionar alguns livros à biblioteca.
 Os menus são estruturados em um loop do-while que permite ao usuário escolher uma opção até optar por sair (opção 0).
 
 ### Classe Pessoa
 É uma classe genérica que representa uma pessoa.
-Ela serve de superclasse para a `Classe Cliente`.
+Ela serve de superclasse para a Classe `Cliente`.
 Essa classe foi criada para caso haja atualizações futuras, o código fique mais legível e a implementação se torne mais simples.
-Essa classe traz um método `imprimirDetalhes` que imprime os dados de uma pessoa (nome, endereço e telefone).
+Essa classe traz um método `imprimirDetalhes()` que imprime os dados de uma pessoa (nome, endereço e telefone).
 
 ### Classe Cliente:
-Mantém informações sobre o cliente, como nome, endereço, telefone e ID.
+A Classe Cliente herda os atributos e métodos da Classe `Pessoa`.
+Além disso, possui atributos específicos para clientes, como um ID de cliente único e uma lista de livros emprestados.
 Possui métodos para emprestar e devolver livros.
-Sobrescreve o método imprimirDetalhes para imprimir detalhes do cliente, incluindo os livros emprestados.
-#### A classe Cliente é uma subclasse da classe Pessoa, o que significa que herda todos os atributos e métodos de Pessoa. Além disso, possui atributos específicos para clientes, como um ID de cliente único e uma lista de livros emprestados.
+Sobrescreve o método `imprimirDetalhes()` para imprimir detalhes do cliente, incluindo os livros emprestados.
+
+### Classe Livro:
+A classe Livro representa um livro da biblioteca.
+Ela é usada para criar novos livros e adicioná-los à biblioteca.
+Quando o livro é criado é necessário especificar um ID para facilitar sua busca.
+Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os detalhes do livro, incluindo título, autor e ID.
 
 ### Classe Biblioteca:
 É a classe com a principal lógica das operações do programa.Mantém listas de livros e clientes.
@@ -65,19 +71,6 @@ Permite que um cliente devolva um livro, atualizando seu status para "Disponíve
 Localiza um cliente na lista de clientes por meio do ID.
 #### encontrarLivroPorID:
 Localiza um livro na lista de livros por meio do ID.
-
-### Classe Livro:
-A classe Livro representa um livro da biblioteca. Ela possui os seguintes atributos:
-
-Título: O título do livro.
-Autor: O autor do livro.
-ID do Livro: Um identificador único para o livro.
-Status: Indica se o livro está disponível para empréstimo ou se já está emprestado.
-
-#### A classe Livro também possui os seguintes métodos:
-Construtor: Inicializa os atributos do livro.
-Getters e Setters: Métodos para acessar e modificar os atributos do livro.
-imprimirDetalhes(): Um método que imprime os detalhes do livro, incluindo título, autor e ID.
 
 ## Utilização
 
