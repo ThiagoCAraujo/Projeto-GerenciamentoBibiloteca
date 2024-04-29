@@ -37,15 +37,23 @@ Os menus são estruturados em um loop do-while que permite ao usuário escolher 
 
 ### Biblioteca (Classe que representa a biblioteca):
 Mantém listas de livros e clientes.
-Métodos principais:
-adicionarLivro: Adiciona um livro à lista de livros da biblioteca.
-removerLivro: Remove um livro da lista de livros da biblioteca.
-adicionarCliente: Adiciona um cliente à lista de clientes da biblioteca.
-removerCliente: Remove um cliente da lista de clientes da biblioteca.
-emprestarLivro: Permite emprestar um livro para um cliente, atualizando seu status para "Emprestado".
-devolverLivro: Permite que um cliente devolva um livro, atualizando seu status para "Disponível".
-encontrarClientePorID: Localiza um cliente na lista de clientes por meio do ID.
-encontrarLivroPorID: Localiza um livro na lista de livros por meio do ID.
+#### Métodos principais:
+#### adicionarLivro:
+Adiciona um livro à lista de livros da biblioteca.
+#### removerLivro:
+Remove um livro da lista de livros da biblioteca.
+#### adicionarCliente:
+Adiciona um cliente à lista de clientes da biblioteca.
+#### removerCliente:
+Remove um cliente da lista de clientes da biblioteca.
+#### emprestarLivro:
+Permite emprestar um livro para um cliente, atualizando seu status para "Emprestado".
+#### devolverLivro: 
+Permite que um cliente devolva um livro, atualizando seu status para "Disponível".
+#### encontrarClientePorID:
+Localiza um cliente na lista de clientes por meio do ID.
+#### encontrarLivroPorID:
+Localiza um livro na lista de livros por meio do ID.
 
 ### Cliente (Classe que representa um cliente):
 Mantém informações sobre o cliente, como nome, endereço, telefone e ID.
