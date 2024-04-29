@@ -41,7 +41,7 @@ Essa classe foi criada para caso haja atualizações futuras, o código fique ma
 Essa classe traz um método `imprimirDetalhes()` que imprime os dados de uma pessoa (nome, endereço e telefone).
 
 ### Classe Cliente:
-A Classe Cliente herda os atributos e métodos da Classe `Pessoa`.
+A classe Cliente herda os atributos e métodos da Classe `Pessoa`.
 Além disso, possui atributos específicos para clientes, como um ID de cliente único e uma lista de livros emprestados.
 Possui métodos para emprestar e devolver livros.
 Sobrescreve o método `imprimirDetalhes()` para imprimir detalhes do cliente, incluindo os livros emprestados.
@@ -53,24 +53,16 @@ Quando o livro é criado é necessário especificar um ID para facilitar sua bus
 Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os detalhes do livro, incluindo título, autor e ID.
 
 ### Classe Biblioteca:
-É a classe com a principal lógica das operações do programa.Mantém listas de livros e clientes.
-#### Métodos principais:
-#### adicionarLivro:
-Adiciona um livro à lista de livros da biblioteca.
-#### removerLivro:
-Remove um livro da lista de livros da biblioteca.
-#### adicionarCliente:
-Adiciona um cliente à lista de clientes da biblioteca.
-#### removerCliente:
-Remove um cliente da lista de clientes da biblioteca.
-#### emprestarLivro:
-Permite emprestar um livro para um cliente, atualizando seu status para "Emprestado".
-#### devolverLivro: 
-Permite que um cliente devolva um livro, atualizando seu status para "Disponível".
-#### encontrarClientePorID:
-Localiza um cliente na lista de clientes por meio do ID.
-#### encontrarLivroPorID:
-Localiza um livro na lista de livros por meio do ID.
+É a classe com a principal lógica das operações do programa.
+É aqui onde ficam aramzenadas a `lista de clientes` e a `lista de livros`.
+Métodos da classe: `adicionarLivro()`: Adiciona um livro à lista de livros da biblioteca. 
+`removerLivro()`: Remove um livro da lista de livros da biblioteca.
+`adicionarCliente()`: Adiciona um cliente à lista de clientes da biblioteca.
+`removerCliente()`: Remove um cliente da lista de clientes da biblioteca.
+`emprestarLivro()`: Permite emprestar um livro para um cliente, atualizando seu status para "Emprestado".
+`devolverLivro()`: Permite que um cliente devolva um livro, atualizando seu status para "Disponível".
+`encontrarClientePorID()`: Localiza um cliente na lista de clientes por meio do ID.
+`encontrarLivroPorID()`: Localiza um livro na lista de livros por meio do ID.
 
 ## Utilização
 
