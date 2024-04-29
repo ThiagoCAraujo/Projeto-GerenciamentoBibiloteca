@@ -55,14 +55,20 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 ### Classe Biblioteca:
 É a classe com a principal lógica das operações do programa.<br>
 É aqui onde ficam aramzenadas a lista de clientes e a lista de livros.<br>
-#### Métodos da classe:<br>
-`adicionarLivro()`: Adiciona um livro à lista de livros da biblioteca. <br>
-`removerLivro()`: Remove um livro da lista de livros da biblioteca.<br>
-`adicionarCliente()`: Adiciona um cliente à lista de clientes da biblioteca.<br>
-`removerCliente()`: Remove um cliente da lista de clientes da biblioteca.<br>
-`emprestarLivro()`: Permite emprestar um livro para um cliente, atualizando seu status para "Emprestado".<br>
-`devolverLivro()`: Permite que um cliente devolva um livro, atualizando seu status para "Disponível".<br>
-`encontrarClientePorID()`: Localiza um cliente na lista de clientes por meio do ID.<br>
-`encontrarLivroPorID()`: Localiza um livro na lista de livros por meio do ID.<br>
+#### Métodos da classe:
+1. `adicionarLivro()`: Adiciona um livro à lista de livros da biblioteca. <br>
+2. `removerLivro()`: Remove um livro da lista de livros da biblioteca.<br>
+3. `adicionarCliente()`: Adiciona um cliente à lista de clientes da biblioteca.<br>
+4. `removerCliente()`: Remove um cliente da lista de clientes da biblioteca.<br>
+5. `emprestarLivro()`: Permite emprestar um livro para um cliente, atualizando seu status para "Emprestado".<br>
+6. `devolverLivro()`: Permite que um cliente devolva um livro, atualizando seu status para "Disponível".<br>
+7. `encontrarClientePorID()`: Localiza um cliente na lista de clientes por meio do ID.<br>
+8. `encontrarLivroPorID()`: Localiza um livro na lista de livros por meio do ID.<br>
 
 ## Interface e Utilização
+
+![Menu Inicial](C:\Users\thico\OneDrive\Pictures\Screenshots\Captura de tela 2024-04-29 203122.png)
+
+![Menu Cliente](C:\Users\thico\OneDrive\Pictures\Screenshots\Captura de tela 2024-04-29 203145.png)
+
+![Menu Funcionário](C:\Users\thico\OneDrive\Pictures\Screenshots\Captura de tela 2024-04-29 203209.png)
