@@ -55,11 +55,36 @@ Permite que um cliente devolva um livro, atualizando seu status para "Disponíve
 Localiza um cliente na lista de clientes por meio do ID.
 #### encontrarLivroPorID:
 Localiza um livro na lista de livros por meio do ID.
+### classe Pessoa
+é uma classe genérica que representa uma pessoa. Ela contém os seguintes atributos:
 
+Nome: O nome da pessoa.
+Endereço: O endereço da pessoa.
+Telefone: O número de telefone da pessoa.
+
+#### A classe Pessoa também possui os seguintes métodos:
+Construtor: Responsável por inicializar os atributos da pessoa.
+Getters e Setters: Métodos para acessar e modificar os atributos da pessoa.
+imprimirDetalhes(): Um método que imprime os detalhes da pessoa, incluindo nome, endereço e telefone.
+
+### Classe Livro:
+A classe Livro representa um livro da biblioteca. Ela possui os seguintes atributos:
+
+Título: O título do livro.
+Autor: O autor do livro.
+ID do Livro: Um identificador único para o livro.
+Status: Indica se o livro está disponível para empréstimo ou se já está emprestado.
+
+#### A classe Livro também possui os seguintes métodos:
+Construtor: Inicializa os atributos do livro.
+Getters e Setters: Métodos para acessar e modificar os atributos do livro.
+imprimirDetalhes(): Um método que imprime os detalhes do livro, incluindo título, autor e ID.
 ### Cliente (Classe que representa um cliente):
 Mantém informações sobre o cliente, como nome, endereço, telefone e ID.
 Possui métodos para emprestar e devolver livros.
 Sobrescreve o método imprimirDetalhes para imprimir detalhes do cliente, incluindo os livros emprestados.
+#### A classe Cliente é uma subclasse da classe Pessoa, o que significa que herda todos os atributos e métodos de Pessoa. Além disso, possui atributos específicos para clientes, como um ID de cliente único e uma lista de livros emprestados.
+
 ## Utilização
 
 Para utilizar o sistema, execute o método `main` da classe `Main`. Isso iniciará o sistema e exibirá os menus para cliente e funcionário, onde as operações podem ser realizadas conforme descrito acima.
