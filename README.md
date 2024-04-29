@@ -66,10 +66,9 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 8. `encontrarLivroPorID()`: Localiza um livro na lista de livros por meio do ID.<br>
 
 ## Interface e Utilização
-
-![Menu Inicial](Imagens/MenuPrincipal.png)
 ### Menu Inicial<br>
-![Menu Cliente](Imagens/MenuCliente.png)
+![Menu Inicial](Imagens/MenuPrincipal.png)
 ### Menu Cliente<br>
+![Menu Cliente](Imagens/MenuCliente.png)
+### Menu Funcionário<br>
 ![Menu Funcionário](Imagens/MenuFuncionario.png)
-### Menu Funcionário
