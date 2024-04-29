@@ -68,7 +68,8 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 ## Interface e Utilização
 
 ![Menu Inicial](Imagens/MenuPrincipal.png)
-
-![Menu Cliente](Imagens/203145.png)
-
-![Menu Funcionário](Imagens/203209.png)
+### Menu Inicial<br>
+![Menu Cliente](Imagens/MenuCliente.png)
+### Menu Cliente<br>
+![Menu Funcionário](Imagens/MenuFuncionario.png)
+### Menu Funcionário
