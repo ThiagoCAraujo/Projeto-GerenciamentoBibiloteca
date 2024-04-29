@@ -31,7 +31,8 @@ No Menu Funcionário, os funcionários da biblioteca podem realizar as seguintes
 ## Estrutura do Código
 
 ### Main (Classe Principal):
-O método main é o ponto de entrada do programa. Ele inicializa a biblioteca e exibe os menus para cliente e funcionário.
+O método main é o ponto de entrada do programa. 
+Ele inicializa a biblioteca e exibe os menus para cliente e funcionário.
 A função inicializarBiblioteca é chamada para adicionar alguns livros à biblioteca.
 Os menus são estruturados em um loop do-while que permite ao usuário escolher uma opção até optar por sair (opção 0).
 
