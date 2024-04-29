@@ -55,7 +55,7 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 ### Classe Biblioteca:
 É a classe com a principal lógica das operações do programa.<br>
 É aqui onde ficam aramzenadas a lista de clientes e a lista de livros.<br>
-####Métodos da classe:<br>
+#### Métodos da classe:<br>
 `adicionarLivro()`: Adiciona um livro à lista de livros da biblioteca. <br>
 `removerLivro()`: Remove um livro da lista de livros da biblioteca.<br>
 `adicionarCliente()`: Adiciona um cliente à lista de clientes da biblioteca.<br>
@@ -65,8 +65,4 @@ Essa Classe também apresenta um método `imprimirDetalhes()`, que imprime os de
 `encontrarClientePorID()`: Localiza um cliente na lista de clientes por meio do ID.<br>
 `encontrarLivroPorID()`: Localiza um livro na lista de livros por meio do ID.<br>
 
-## Utilização
-
-Para utilizar o sistema, execute o método `main` da classe `Main`. Isso iniciará o sistema e exibirá os menus para cliente e funcionário, onde as operações podem ser realizadas conforme descrito acima.
-
-
+## Interface e Utilização
