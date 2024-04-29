@@ -30,14 +30,27 @@ No Menu Funcionário, os funcionários da biblioteca podem realizar as seguintes
 
 ## Estrutura do Código
 
-O código está dividido em três classes principais:
+### Main (Classe Principal):
+O método main é o ponto de entrada do programa. Ele inicializa a biblioteca e exibe os menus para cliente e funcionário.
+A função inicializarBiblioteca é chamada para adicionar alguns livros à biblioteca.
+Os menus são estruturados em um loop do-while que permite ao usuário escolher uma opção até optar por sair (opção 0).
 
-1. **Main:** Classe principal que contém o método `main` e os menus para cliente e funcionário.
-2. **Biblioteca:** Classe que representa a biblioteca, contendo métodos para adicionar, remover livros e clientes, emprestar e devolver livros, e localizar clientes e livros por ID.
-3. **Cliente:** Classe que representa um cliente da biblioteca, com métodos para emprestar e devolver livros, além de imprimir detalhes do cliente e dos livros emprestados.
+### Biblioteca (Classe que representa a biblioteca):
+Mantém listas de livros e clientes.
+Métodos principais:
+adicionarLivro: Adiciona um livro à lista de livros da biblioteca.
+removerLivro: Remove um livro da lista de livros da biblioteca.
+adicionarCliente: Adiciona um cliente à lista de clientes da biblioteca.
+removerCliente: Remove um cliente da lista de clientes da biblioteca.
+emprestarLivro: Permite emprestar um livro para um cliente, atualizando seu status para "Emprestado".
+devolverLivro: Permite que um cliente devolva um livro, atualizando seu status para "Disponível".
+encontrarClientePorID: Localiza um cliente na lista de clientes por meio do ID.
+encontrarLivroPorID: Localiza um livro na lista de livros por meio do ID.
 
-Além disso, há outras classes auxiliares como `Livro`, `Pessoa` e `Conta` (não utilizado no sistema de biblioteca).
-
+### Cliente (Classe que representa um cliente):
+Mantém informações sobre o cliente, como nome, endereço, telefone e ID.
+Possui métodos para emprestar e devolver livros.
+Sobrescreve o método imprimirDetalhes para imprimir detalhes do cliente, incluindo os livros emprestados.
 ## Utilização
 
 Para utilizar o sistema, execute o método `main` da classe `Main`. Isso iniciará o sistema e exibirá os menus para cliente e funcionário, onde as operações podem ser realizadas conforme descrito acima.
