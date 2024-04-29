@@ -34,6 +34,18 @@ Ele inicializa a biblioteca e exibe os menus para cliente e funcionário.
 A função `inicializarBiblioteca` é chamada para adicionar alguns livros à biblioteca.
 Os menus são estruturados em um loop do-while que permite ao usuário escolher uma opção até optar por sair (opção 0).
 
+### Classe Pessoa
+É uma classe genérica que representa uma pessoa.
+Ela serve de superclasse para a `Classe Cliente`.
+Essa classe foi criada para caso haja atualizações futuras, o código fique mais legível e a implementação se torne mais simples.
+Essa classe traz um método `imprimirDetalhes` que imprime os dados de uma pessoa (nome, endereço e telefone).
+
+### Classe Cliente:
+Mantém informações sobre o cliente, como nome, endereço, telefone e ID.
+Possui métodos para emprestar e devolver livros.
+Sobrescreve o método imprimirDetalhes para imprimir detalhes do cliente, incluindo os livros emprestados.
+#### A classe Cliente é uma subclasse da classe Pessoa, o que significa que herda todos os atributos e métodos de Pessoa. Além disso, possui atributos específicos para clientes, como um ID de cliente único e uma lista de livros emprestados.
+
 ### Classe Biblioteca:
 É a classe com a principal lógica das operações do programa.Mantém listas de livros e clientes.
 #### Métodos principais:
@@ -54,18 +66,6 @@ Localiza um cliente na lista de clientes por meio do ID.
 #### encontrarLivroPorID:
 Localiza um livro na lista de livros por meio do ID.
 
-### Classe Pessoa
-é uma classe genérica que representa uma pessoa. Ela serve de superclasse para a `Classe Cliente`. Essa classe foi criada para caso haja atualizações futuras, o código fique mais legível e a implementação se torne mais simples.
-
-Nome: O nome da pessoa.
-Endereço: O endereço da pessoa.
-Telefone: O número de telefone da pessoa.
-
-#### A classe Pessoa também possui os seguintes métodos:
-Construtor: Responsável por inicializar os atributos da pessoa.
-Getters e Setters: Métodos para acessar e modificar os atributos da pessoa.
-imprimirDetalhes(): Um método que imprime os detalhes da pessoa, incluindo nome, endereço e telefone.
-
 ### Classe Livro:
 A classe Livro representa um livro da biblioteca. Ela possui os seguintes atributos:
 
@@ -78,11 +78,6 @@ Status: Indica se o livro está disponível para empréstimo ou se já está emp
 Construtor: Inicializa os atributos do livro.
 Getters e Setters: Métodos para acessar e modificar os atributos do livro.
 imprimirDetalhes(): Um método que imprime os detalhes do livro, incluindo título, autor e ID.
-### Cliente (Classe que representa um cliente):
-Mantém informações sobre o cliente, como nome, endereço, telefone e ID.
-Possui métodos para emprestar e devolver livros.
-Sobrescreve o método imprimirDetalhes para imprimir detalhes do cliente, incluindo os livros emprestados.
-#### A classe Cliente é uma subclasse da classe Pessoa, o que significa que herda todos os atributos e métodos de Pessoa. Além disso, possui atributos específicos para clientes, como um ID de cliente único e uma lista de livros emprestados.
 
 ## Utilização
 
