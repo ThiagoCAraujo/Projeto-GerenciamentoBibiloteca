@@ -3,62 +3,74 @@ package entities;
 import java.util.ArrayList;
 
 public class Biblioteca {
-	protected ArrayList<Livro> listaLivros;
-	protected ArrayList<Cliente> listaClientes;
-	protected ArrayList<String> livrosDisponiveis;
-	
-	
-	public Biblioteca() {
-	}
-	
-	public Biblioteca(ArrayList<Livro> listaLivros, ArrayList<Cliente> listaClientes, 
-			ArrayList<String> livrosDisponiveis) {
-		this.listaLivros = listaLivros;
-		this.listaClientes = listaClientes;
-		this.livrosDisponiveis = livrosDisponiveis;
-	}
-	
-	public void adicionarLivro(Livro livro) {
-		listaLivros.add(livro);
-	}
-	
-	public void removerLivro(Livro livro) {
-		listaLivros.remove(livro);
-	}
-	
-	public void adicionarCliente(Cliente cliente) {
-		listaClientes.add(cliente);
-	}
-	
-	public void removerCliente(Cliente cliente) {
-		listaClientes.remove(cliente);
-	}
-	
-	public void emprestarLivro(Cliente cliente, Livro livro) {
-		if(livro.getStatus()) {
-			livro.setStatus(false);
-			cliente.emprestarLivro(livro);
-		} else {
-			System.out.println("Livro nao disponivel para emprestimo!");
-		}
-	}
-	
-	public void devolverLivro(Cliente cliente, Livro livro) {
-		if(livro.getStatus()) {
-			cliente.devolverLivro(livro);
-			livro.setStatus(true);
-		} else {
-			System.out.println("Esse livro nao foi emprestado por esse cliente!");
-		}
-	}
-	
-	public ArrayList<String> livrosDisponiveis() {
-        livrosDisponiveis.clear();
-        for (Livro livro : listaLivros) {
-            if (livro.getStatus()) {
-                livrosDisponiveis.add(livro.getTitulo());
+    private ArrayList<Livro> listaLivros;
+    private ArrayList<Cliente> listaClientes;
+
+    // Construtor
+    public Biblioteca() {
+        listaLivros = new ArrayList<>();
+        listaClientes = new ArrayList<>();
+    }
+
+    // Getters
+    public ArrayList<Livro> getListaLivros() {
+        return listaLivros;
+    }
+
+    public ArrayList<Cliente> getListaClientes() {
+        return listaClientes;
+    }
+    
+    // Métodos da Biblioteca
+    public void adicionarLivro(Livro livro) {
+        listaLivros.add(livro);
+    }
+
+    public void removerLivro(Livro livro) {
+        listaLivros.remove(livro);
+    }
+
+    public void adicionarCliente(Cliente cliente) {
+        listaClientes.add(cliente);
+    }
+
+    public void removerCliente(Cliente cliente) {
+        listaClientes.remove(cliente);
+    }
+
+    public void emprestarLivro(Cliente cliente, Livro livro) {
+        if (livro.getStatus().equals("Disponível")) {
+            cliente.emprestarLivro(livro);
+            System.out.println("Livro emprestado com sucesso!");
+        } else {
+            System.out.println("O livro não está disponível para empréstimo.");
+        }
+    }
+
+    public void devolverLivro(Cliente cliente, Livro livro) {
+        if (cliente.getLivrosEmprestados().contains(livro)) {
+            cliente.devolverLivro(livro);
+            System.out.println("Livro devolvido com sucesso!");
+        } else {
+            System.out.println("Este cliente não tem este livro emprestado.");
+        }
+    }
+
+    public Cliente encontrarClientePorID(int idCliente) {
+        for (Cliente cliente : listaClientes) {
+            if (cliente.getIdCliente() == idCliente) {
+                return cliente;
             }
         }
-        return livrosDisponiveis;
+        return null;
+    }
+
+    public Livro encontrarLivroPorID(int idLivro) {
+        for (Livro livro : listaLivros) {
+            if (livro.getIdLivro() == idLivro) {
+                return livro;
+            }
+        }
+        return null;
     }
 }
