@@ -18,7 +18,7 @@ public class Main {
 
         int opcao;
         do {
-            System.out.println("\n=== Menu ===");
+            System.out.println("\n--- Menu ---");
             System.out.println("1. Menu Cliente");
             System.out.println("2. Menu Funcionário");
             System.out.println("0. Sair");
@@ -52,7 +52,7 @@ public class Main {
     // Método para o menu do cliente
     public static void menuCliente(Biblioteca biblioteca) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\n=== Menu Cliente ===");
+        System.out.println("\n--- Menu Cliente ---");
         System.out.println("1. Lista de Livros Disponíveis");
         System.out.println("2. Pegar livro emprestado");
         System.out.println("3. Devolver Livro");
@@ -115,7 +115,7 @@ public class Main {
     // Método para o menu do funcionário
     public static void menuFuncionario(Biblioteca biblioteca) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\n=== Menu Funcionário ===");
+        System.out.println("\n--- Menu Funcionário ---");
         System.out.println("1. Adicionar Livro");
         System.out.println("2. Remover Livro");
         System.out.println("3. Adicionar Cliente");
@@ -131,9 +131,9 @@ public class Main {
             case 1:
                 // Lógica para adicionar livro
                 System.out.print("Digite o título do livro: ");
+                scanner.nextLine();
                 String tituloLivro = scanner.nextLine();
                 System.out.print("Digite o autor do livro: ");
-                scanner.nextLine();
                 String autorLivro = scanner.nextLine();
                 System.out.print("Digite o ID do livro: ");
                 int idLivro = scanner.nextInt();
